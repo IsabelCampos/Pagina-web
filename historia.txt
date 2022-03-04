@@ -1,0 +1,29 @@
+git remote add origin https://github.com/IsabelCampos/HyperBlog.git <=== 
+git pull origin master --allow-unrelated-histories
+git push origin master
+ssh-keygen -t rsa -b 4096 -C "elmermdelapazttito@gmail.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa <===== llave ssh
+
+
+git remote -v
+git remote set-url origin git@github.com:IsabelCampos/Isabelblog.git
+git pull origin master
+git status
+git commit -am "Nueva Version"
+git pull origin master
+git push origin mastergit c
+
+
+alias arbolito="git log --all --graph --decorate --oneline"
+git tag -a v0.1 -m "Resultados del tester"  107570d
+git tag
+git show-ref --tags
+git status
+git pull origin master
+git push origin --tags
+git tag -a v0.2 -m "Dormir" 1fa9bbf
+git tag -d v0.2
+git pull origin master
+git push origin --tags
+git push origin :refs/tags/v0.2
